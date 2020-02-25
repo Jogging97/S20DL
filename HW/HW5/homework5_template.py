@@ -12,6 +12,7 @@ class RNN:
         # TODO: IMPLEMENT ME
 
     def backward (self, y):
+
         # TODO: IMPLEMENT ME
         pass
 
@@ -31,11 +32,15 @@ def generateData ():
     return (x, y)
 
 if __name__ == "__main__":
+
     xs, ys = generateData()
-    print xs
-    print ys
+    print(xs)
+    print(ys)
+    print(len(xs))
+    print(len(ys))
     numHidden = 6
     numInput = 1
     numTimesteps = len(xs)
     rnn = RNN(numHidden, numInput, 1)
+    print(rnn.__dict__)
     # TODO: IMPLEMENT ME
